@@ -1,6 +1,8 @@
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+Install all the dependencies listed in the `package.json` file. This command should be run before starting the project or whenever there are changes to the dependencies.
 
 ### `npm start`
 
