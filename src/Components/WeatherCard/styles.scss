@@ -1,0 +1,129 @@
+.weather-card {
+  width: 300px;
+  min-width: 150px;
+  height: 30rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  .icon-and-temperature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .temperature {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+  }
+
+  .place {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .date-time {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    p {
+      flex: 1;
+      text-align: center;
+      padding: 0.5rem;
+      background-color: #3182ce;
+      border-radius: 0.5rem;
+      color: white;
+    }
+  }
+
+  .weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    p {
+      flex: 1;
+      text-align: center;
+      padding: 0.5rem;
+      background-color: #4caf50;
+      border-radius: 0.5rem;
+      color: white;
+    }
+  }
+
+  .separator {
+    background-color: #d1d5db;
+    height: 2px;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .conditions {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+
+  @media only screen and (max-width: 980px) {
+    width: 350px;
+    margin-right: 0;
+
+    .icon-and-temperature {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .temperature {
+        font-size: 1.8rem;
+      }
+    }
+
+    .date-time {
+      flex-direction: column;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .weather-info {
+      flex-direction: column;
+    }
+
+    .separator {
+      margin-bottom: 0.5rem;
+    }
+
+    .conditions {
+      font-size: 1.5rem;
+    }
+
+  }
+}
+
+.card-link:hover .weather-card {
+  background-color: lightblue;
+}
+
+.card-link:hover .weather-card-small {
+  background-color: lightblue;
+}
