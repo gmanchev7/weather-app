@@ -1,0 +1,11 @@
+.days-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+  }
+}

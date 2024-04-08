@@ -1,0 +1,116 @@
+.weather-card-small {
+  width: 150px;
+  min-width: 75px;
+  height: 25rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  .icon-and-temperature-small {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    .temperature-small {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .place-small {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .date-time-small {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    p {
+      flex: 1;
+      text-align: center;
+      padding: 0.25rem;
+      background-color: #3182ce;
+      border-radius: 0.25rem;
+      color: white;
+    }
+  }
+
+  .weather-info-small {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    p {
+      flex: 1;
+      text-align: center;
+      padding: 0.15rem;
+      background-color: #4caf50;
+      border-radius: 0.25rem;
+      color: white;
+    }
+  }
+
+  .separator-small {
+    background-color: #d1d5db;
+    height: 2px;
+    border: none;
+    margin-bottom: 0.5rem;
+  }
+
+  .conditions-small {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 980px) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+
+    .icon-and-temperature-small {
+      flex-direction: column;
+      gap: 0.25rem;
+      align-items: center;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      .temperature-small {
+        font-size: 0.8rem;
+      }
+    }
+
+    .place-small {
+      font-size: 0.4rem;
+    }
+
+    .date-time-small {
+      flex-direction: column;
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
+
+    .weather-info-small {
+      flex-direction: column;
+    }
+
+    .separator-small {
+      margin-bottom: 0.25rem;
+    }
+
+    .conditions-small {
+      font-size: 1rem;
+    }
+  }
+}

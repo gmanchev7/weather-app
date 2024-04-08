@@ -1,0 +1,57 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  .search-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin: 10px;
+
+      &:hover {
+          background-color: #218838;
+      }
+  }
+}
+
+.weather-days-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-days-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 980px) {
+  .weather {
+      margin-top: 20px;
+  }
+
+  .search-btn {
+      padding: 6px 16px;
+      font-size: 14px;
+      margin: 8px;
+  }
+
+  .weather-days-container {
+      flex-direction: column;
+  }
+  .other-days-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,56 @@
+.weather-card-small {
+    width: 150px;
+    min-width: 75px;
+    height: 15rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+    .icon-and-temperature-small {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        img {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .temperature-small {
+            font-size: 20px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    }
+
+    .place-small {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        font-size: 20px;
+    }
+
+    .date-time-small {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+
+        p {
+            flex: 1;
+            text-align: center;
+            padding: 0.25rem;
+            background-color: #3182ce;
+            border-radius: 0.25rem;
+            color: white;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 250px;
+    }
+}
